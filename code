@@ -1,1 +1,15 @@
 #Question1
+
+a=499.00;
+b=855.00;
+c=645.00;
+print('Book1-Introduction to Python Programming : Rs %.2f'%(a));
+print('Book2-Python Libraries Cookbook : Rs %.2f'%(b));
+print('Book3-Data Science in Python : Rs %.2f'%(c));
+b1=int(input('Enter number of copies of book1 : '));
+b2=int(input('Enter number of copies of book2 : '));
+b3=int(input('Enter number of copies of book3 : '));
+price=(b1*a)+(b2*b)+(b3*c);
+tax=0.12*price;
+total_amount=tax+price+250;
+print('Total invoice amount : %.2f'%(total_amount));
