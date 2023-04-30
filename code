@@ -13,3 +13,17 @@ price=(b1*a)+(b2*b)+(b3*c);
 tax=0.12*price;
 total_amount=tax+price+250;
 print('Total invoice amount : %.2f'%(total_amount));
+
+#Question2
+
+s=input('string1 = ');
+s1=s.lower();
+l=[];
+for i in s1:
+    if i not in l:
+        l.append(i);
+print('uniqueLetters = ',end="");
+for i in range(len(l)-1):
+    print("%c"%(l[i]),end=",");
+print("%c"%(l[len(l)-1]));
+
